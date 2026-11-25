@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios con LocalStorage</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <main class="container">
+        <header class="page-header">
+            <h1>Ejercicios de LocalStorage</h1>
+        </header>
+
+        <section class="card">
+            <h2>Ejercicio 1. Guardar un nombre</h2>
+            <form action="">
+                <label for="nombreGuardar">Nombre</label>
+                <input type="text" id="nombreGuardar">
+                <button type="button" onclick="guardarNombre()">Guardar Nombre</button>
+            </form>
+            <p id="resultadoGuardar" class="resultado"></p>
+        </section>
+        <section class="card">
+            <h2>Ejercicio 2: Mostrar los nombres guardados</h2>
+            <form action="">
+                <button type="button" onclick="mostrarNombre()">Mostrar Nombres</button>
+            </form>
+            <p id="resultadoMostrar" class="resultado"></p>
+        </section>
+        <section class="card">
+            <h2>Ejercicio 3: Editar un nombre</h2>
+
+            <label for="posicionEditar">Posición del nombre</label>
+            <input type="number" id="posicionEditar">
+
+            <label for="nuevoNombre">Nuevo Nombre:</label>
+            <input type="text" id="nuevoNombre">
+
+            <button type="button" onclick="editarNombre()">
+                Editar Nombre
+            </button>
+
+            <p id="resultadoEditar" class="resultado"></p>
+        </section>
+        <section class="card">
+            <h2>Ejercicio 4: Eliminar todos los nombres guardados.</h2>
+            <form action="">
+                <button type="button" class="danger" onclick="eliminarNombre()">Eliminar todos.</button>
+            </form>
+            <p id="resultadoEliminar" class="resultado"></p>
+        </section>
+        <section class="card">
+            <h2>Guardar una mascota</h2>
+            <form action="">
+                <label for="mascota">Mascota</label>
+                <input type="text" id="mascota">
+
+                <label for="raza">Raza</label>
+                <input type="text" id="raza">
+
+                <label for="edad">Edad</label>
+                <input type="number" id="edad" min="0">
+
+                <button type="button" onclick="guardarMascota()">Guardar mascota</button>
+            </form>
+
+            <p id="resultadoMascota" class="resultado"></p>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
